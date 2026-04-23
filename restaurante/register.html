@@ -1,0 +1,182 @@
+<!doctype html>
+<html lang="es" data-theme="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registro - Juan José Avícola</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.4/css/bulma.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav class="navbar" role="navigation" aria-label="main navigation">
+      <div class="navbar-brand">
+        <a class="navbar-item" href="index.html"> juan jose avicola </a>
+      </div>
+      <div class="navbar-menu" id="navbarBasicExample">
+        <div class="navbar-start">
+          <a class="navbar-item" href="index.html"> Inicio </a>
+          <a class="navbar-item" href="menu.html"> Menú </a>
+          <a class="navbar-item" href="about.html"> Nosotros </a>
+          <a class="navbar-item" href="jobs.html"> Empleo </a>
+          <a class="navbar-item" href="contact.html"> Contacto </a>
+        </div>
+        <div class="navbar-end">
+          <div class="navbar-item">
+            <div class="buttons">
+              <a class="button" style="background-color: #48c774; color: black; border: none; font-weight: bold;" href="register.html">
+                <strong>Ingresar / Registro</strong>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container section">
+       <div class="columns is-centered">
+         <div class="column is-8">
+           <div class="box mt-4 columna-destacada">
+             <h1 class="title is-3 has-text-centered page-title mb-5">Registro de Usuario</h1>
+             <p class="subtitle is-6 has-text-centered subtitle-text mb-6">Crea tu cuenta o inicia sesión para gestionar tus pedidos.</p>
+             
+             <form>
+               <div class="columns is-multiline">
+                 
+                 <!-- Nombre -->
+                 <div class="column is-6">
+                   <div class="field">
+                     <label class="label has-text-white">Nombre</label>
+                     <div class="control">
+                       <input class="input" type="text" placeholder="Ej. Juan">
+                     </div>
+                   </div>
+                 </div>
+
+                 <!-- Apellido -->
+                 <div class="column is-6">
+                   <div class="field">
+                     <label class="label has-text-white">Apellido</label>
+                     <div class="control">
+                       <input class="input" type="text" placeholder="Ej. Pérez">
+                     </div>
+                   </div>
+                 </div>
+
+                 <!-- Tipo de documento -->
+                 <div class="column is-6">
+                   <div class="field">
+                     <label class="label has-text-white">Tipo de Documento</label>
+                     <div class="control">
+                       <div class="select is-fullwidth">
+                         <select>
+                           <option value="">Seleccionar...</option>
+                           <option value="ti">Tarjeta de Identidad (TI)</option>
+                           <option value="cc">Cédula de Ciudadanía (CC)</option>
+                         </select>
+                       </div>
+                     </div>
+                   </div>
+                 </div>
+
+                 <!-- Numero de documento -->
+                 <div class="column is-6">
+                   <div class="field">
+                     <label class="label has-text-white">Número de Documento</label>
+                     <div class="control">
+                       <input class="input" type="number" placeholder="Ej. 123456789">
+                     </div>
+                   </div>
+                 </div>
+
+                 <!-- Telefono -->
+                 <div class="column is-6">
+                   <div class="field">
+                     <label class="label has-text-white">Teléfono</label>
+                     <div class="control">
+                       <input class="input" type="tel" placeholder="Ej. 300 000 0000">
+                     </div>
+                   </div>
+                 </div>
+
+                 <!-- Correo -->
+                 <div class="column is-6">
+                   <div class="field">
+                     <label class="label has-text-white">Correo Electrónico</label>
+                     <div class="control">
+                       <input class="input" type="email" placeholder="ejemplo@correo.com">
+                     </div>
+                   </div>
+                 </div>
+
+                 <!-- Genero -->
+                 <div class="column is-4">
+                   <div class="field">
+                     <label class="label has-text-white">Género</label>
+                     <div class="control">
+                       <div class="select is-fullwidth">
+                         <select>
+                           <option value="">Seleccionar...</option>
+                           <option value="m">Masculino</option>
+                           <option value="f">Femenino</option>
+                           <option value="o">Otro</option>
+                         </select>
+                       </div>
+                     </div>
+                   </div>
+                 </div>
+
+                 <!-- Cargo -->
+                 <div class="column is-4">
+                   <div class="field">
+                     <label class="label has-text-white">Cargo</label>
+                     <div class="control">
+                       <input class="input" type="text" placeholder="Ej. Cliente">
+                     </div>
+                   </div>
+                 </div>
+
+                 <!-- Fecha de nacimiento -->
+                 <div class="column is-4">
+                   <div class="field">
+                     <label class="label has-text-white">Fecha de Nacimiento</label>
+                     <div class="control">
+                       <input class="input" type="date">
+                     </div>
+                   </div>
+                 </div>
+
+                 <!-- Contraseña -->
+                 <div class="column is-12">
+                   <div class="field">
+                     <label class="label has-text-white">Contraseña</label>
+                     <div class="control">
+                       <input class="input" type="password" placeholder="Crea una contraseña segura">
+                     </div>
+                   </div>
+                 </div>
+
+               </div>
+
+               <div class="field is-grouped is-grouped-centered mt-5">
+                 <div class="control">
+                   <button class="button is-primary is-medium" style="background-color: #48c774; color: black; font-weight: bold;">
+                     <strong>Registrarse</strong>
+                   </button>
+                 </div>
+                 <div class="control">
+                   <a class="button is-dark is-medium" href="index.html">Cancelar</a>
+                 </div>
+               </div>
+               
+               <p class="has-text-centered mt-4 subtitle-text is-size-6">
+                 ¿Ya tienes cuenta? <a href="#" style="color: #48c774; font-weight: 500;">Inicia sesión aquí</a>
+               </p>
+             </form>
+             
+           </div>
+         </div>
+       </div>
+    </div>
+  </body>
+</html>

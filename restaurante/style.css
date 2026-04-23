@@ -1,0 +1,82 @@
+body {
+  font-family: 'Inter', system-ui, sans-serif;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+
+.columna-destacada {
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 16px;
+  padding: 24px;
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  height: 100%;
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+  transition: background 0.3s, box-shadow 0.3s;
+}
+
+.columna-destacada:hover {
+  background: rgba(255, 255, 255, 0.08);
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.15); 
+}
+
+.contenedor-productos {
+  padding: 2rem;
+  margin-top: 2rem;
+}
+
+.image.is-128x128 {
+  overflow: hidden;
+  border-radius: 12px;
+}
+
+.image.is-128x128 img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+
+.media-content .title {
+  color: #ffffff;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  text-shadow: 0 2px 4px rgba(0,0,0,0.4);
+}
+
+.media-content .subtitle {
+  color: #b3b3b3; 
+  line-height: 1.5;
+}
+
+
+.navbar {
+  background: rgba(15, 15, 15, 0.9) !important;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.navbar-item {
+  transition: color 0.2s, background-color 0.2s;
+  font-weight: 500;
+}
+
+.navbar-item:hover {
+  background-color: rgba(255, 255, 255, 0.1) !important;
+  color: #48c774 !important;
+}
+
+
+.page-title {
+  color: #ffffff;
+  text-transform: uppercase;
+  font-weight: 800;
+  letter-spacing: 1px;
+}
+
+.subtitle-text {
+  color: #d1d1d1;
+}
