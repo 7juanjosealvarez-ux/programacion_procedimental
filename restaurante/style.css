@@ -80,3 +80,45 @@ body {
 .subtitle-text {
   color: #d1d1d1;
 }
+
+/* Form Styles */
+.input, .select select {
+  background-color: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+  color: #fff;
+  transition: all 0.3s ease;
+}
+
+.input:focus, .select select:focus {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-color: #48c774;
+  box-shadow: 0 0 0 0.125em rgba(72, 199, 116, 0.25);
+}
+
+.input::placeholder {
+  color: rgba(255, 255, 255, 0.4);
+}
+
+.select:not(.is-multiple):not(.is-loading)::after {
+  border-color: #48c774;
+}
+
+/* Button hover effects */
+.button.is-primary {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.button.is-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 15px rgba(72, 199, 116, 0.4);
+}
+
+.button.is-dark {
+  transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+.button.is-dark:hover {
+  transform: translateY(-2px);
+  background-color: rgba(255, 255, 255, 0.1);
+}
