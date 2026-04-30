@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="es" data-theme="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Inventario - Juan José Avícola</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.4/css/bulma.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav class="navbar" role="navigation" aria-label="main navigation">
+      <div class="navbar-brand">
+        <a class="navbar-item" href="index.html"> juan jose avicola </a>
+      </div>
+      <div class="navbar-menu" id="navbarBasicExample">
+        <div class="navbar-start">
+          <a class="navbar-item" href="index.html"> Inicio </a>
+          <a class="navbar-item" href="menu.html"> Menú </a>
+          <a class="navbar-item" href="about.html"> Nosotros </a>
+          <a class="navbar-item" href="jobs.html"> Empleo </a>
+          <a class="navbar-item" href="contact.html"> Contacto </a>
+          <a class="navbar-item" href="inventario.html" style="color: #48c774;"> Inventario </a>
+        </div>
+        <div class="navbar-end">
+          <div class="navbar-item">
+            <div class="buttons">
+              <a class="button" style="background-color: #48c774; color: black; border: none; font-weight: bold;" href="register.html">
+                <strong>Ingresar / Registro</strong>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container section">
+       <div class="columns is-centered">
+         <div class="column is-8">
+           <div class="box mt-4 columna-destacada">
+             <h1 class="title is-3 has-text-centered page-title mb-5">Registro de Inventario</h1>
+             <p class="subtitle is-6 has-text-centered subtitle-text mb-6">Añade o modifica los productos de tu inventario.</p>
+             
+             <form>
+               <div class="columns is-multiline">
+                 
+                 <!-- Código Producto -->
+                 <div class="column is-6">
+                   <div class="field">
+                     <label class="label has-text-white" for="codigo_producto">Código del Producto</label>
+                     <div class="control">
+                       <input class="input" type="text" id="codigo_producto" name="codigo_producto" placeholder="Ej. PROD-001">
+                     </div>
+                   </div>
+                 </div>
+
+                 <!-- Nombre Producto -->
+                 <div class="column is-6">
+                   <div class="field">
+                     <label class="label has-text-white" for="nombre_producto">Nombre del Producto</label>
+                     <div class="control">
+                       <input class="input" type="text" id="nombre_producto" name="nombre_producto" placeholder="Ej. Pechuga de Pollo">
+                     </div>
+                   </div>
+                 </div>
+
+                 <!-- Cantidad -->
+                 <div class="column is-6">
+                   <div class="field">
+                     <label class="label has-text-white" for="cantidad">Cantidad</label>
+                     <div class="control">
+                       <input class="input" type="number" id="cantidad" name="cantidad" placeholder="Ej. 50">
+                     </div>
+                   </div>
+                 </div>
+
+                 <!-- Marca Producto -->
+                 <div class="column is-6">
+                   <div class="field">
+                     <label class="label has-text-white" for="marca_producto">Marca del Producto</label>
+                     <div class="control">
+                       <input class="input" type="text" id="marca_producto" name="marca_producto" placeholder="Ej. Mac Pollo">
+                     </div>
+                   </div>
+                 </div>
+
+               </div>
+
+               <div class="field is-grouped is-grouped-centered mt-5">
+                 <div class="control">
+                   <button class="button is-primary is-medium" style="background-color: #48c774; color: black; font-weight: bold;" type="submit">
+                     <strong>Guardar Producto</strong>
+                   </button>
+                 </div>
+                 <div class="control">
+                   <a class="button is-dark is-medium" href="index.html">Cancelar</a>
+                 </div>
+               </div>
+               
+             </form>
+             
+           </div>
+         </div>
+       </div>
+    </div>
+  </body>
+</html>
