@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="es" data-theme="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contabilidad - Juan José Avícola</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.4/css/bulma.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav class="navbar" role="navigation" aria-label="main navigation">
+      <div class="navbar-brand">
+        <a class="navbar-item" href="index.html"> juan jose avicola </a>
+      </div>
+      <div class="navbar-menu" id="navbarBasicExample">
+        <div class="navbar-start">
+          <a class="navbar-item" href="index.html"> Inicio </a>
+          <a class="navbar-item" href="menu.html"> Menú </a>
+          <a class="navbar-item" href="about.html"> Nosotros </a>
+          <a class="navbar-item" href="jobs.html"> Empleo </a>
+          <a class="navbar-item" href="contact.html"> Contacto </a>
+          <a class="navbar-item" href="inventario.html"> Inventario </a>
+          <a class="navbar-item" href="contabilidad.html" style="color: #48c774;"> Contabilidad </a>
+        </div>
+        <div class="navbar-end">
+          <div class="navbar-item">
+            <div class="buttons">
+              <a class="button" style="background-color: #48c774; color: black; border: none; font-weight: bold;" href="register.html">
+                <strong>Ingresar / Registro</strong>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container section">
+       <div class="columns is-centered">
+         
+         <!-- Perfil de usuario (Izquierda) -->
+         <div class="column is-4">
+           <div class="box mt-4 has-text-centered" style="height: 100%; border-right: 4px solid #48c774;">
+             <figure class="image is-128x128 is-inline-block mt-4 mb-4">
+               <img class="is-rounded" src="https://ui-avatars.com/api/?name=Juan+Jose&background=48c774&color=000&size=128" alt="Foto de usuario">
+             </figure>
+             <h2 class="title is-4 has-text-white mt-2">Juan José</h2>
+             <p class="subtitle is-6 has-text-grey-light">Administrador de Contabilidad</p>
+           </div>
+         </div>
+
+         <!-- Formulario de contabilidad (Derecha) -->
+         <div class="column is-8">
+           <div class="box mt-4 columna-destacada">
+             <h1 class="title is-3 has-text-centered page-title mb-5">Módulo de Contabilidad</h1>
+             <p class="subtitle is-6 has-text-centered subtitle-text mb-6">Gestiona las ventas, ingresos y egresos del restaurante.</p>
+             
+             <form>
+               <div class="columns is-multiline">
+                 
+                 <!-- Ventas -->
+                 <div class="column is-6">
+                   <div class="field">
+                     <label class="label has-text-white" for="ventas">Ventas</label>
+                     <div class="control">
+                       <input class="input" type="number" id="ventas" name="ventas" placeholder="Ej. 150000">
+                     </div>
+                   </div>
+                 </div>
+
+                 <!-- Fecha -->
+                 <div class="column is-6">
+                   <div class="field">
+                     <label class="label has-text-white" for="fecha">Fecha</label>
+                     <div class="control">
+                       <input class="input" type="date" id="fecha" name="fecha">
+                     </div>
+                   </div>
+                 </div>
+
+                 <!-- Ingresos -->
+                 <div class="column is-6">
+                   <div class="field">
+                     <label class="label has-text-white" for="ingresos">Ingresos</label>
+                     <div class="control">
+                       <input class="input" type="number" id="ingresos" name="ingresos" placeholder="Ej. 200000">
+                     </div>
+                   </div>
+                 </div>
+
+                 <!-- Egresos -->
+                 <div class="column is-6">
+                   <div class="field">
+                     <label class="label has-text-white" for="egresos">Egresos</label>
+                     <div class="control">
+                       <input class="input" type="number" id="egresos" name="egresos" placeholder="Ej. 50000">
+                     </div>
+                   </div>
+                 </div>
+
+                 <!-- Concepto -->
+                 <div class="column is-6">
+                   <div class="field">
+                     <label class="label has-text-white" for="concepto">Concepto</label>
+                     <div class="control">
+                       <input class="input" type="text" id="concepto" name="concepto" placeholder="Ej. Pago de proveedores">
+                     </div>
+                   </div>
+                 </div>
+
+                 <!-- Valor -->
+                 <div class="column is-6">
+                   <div class="field">
+                     <label class="label has-text-white" for="valor">Valor</label>
+                     <div class="control">
+                       <input class="input" type="number" id="valor" name="valor" placeholder="Ej. 50000">
+                     </div>
+                   </div>
+                 </div>
+
+               </div>
+
+               <div class="field is-grouped is-grouped-centered mt-5">
+                 <div class="control">
+                   <button class="button is-primary is-medium" style="background-color: #48c774; color: black; font-weight: bold;" type="submit">
+                     <strong>Guardar Registro</strong>
+                   </button>
+                 </div>
+                 <div class="control">
+                   <a class="button is-dark is-medium" href="index.html">Cancelar</a>
+                 </div>
+               </div>
+               
+             </form>
+             
+           </div>
+         </div>
+       </div>
+    </div>
+  </body>
+</html>
