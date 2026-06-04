@@ -43,7 +43,8 @@
              <h1 class="title is-3 has-text-centered page-title mb-5">Registro de Usuario</h1>
              <p class="subtitle is-6 has-text-centered subtitle-text mb-6">Crea tu cuenta o inicia sesión para gestionar tus pedidos.</p>
              
-             <form>
+             <form id="registroFormulario" novalidate>
+               <div id="registroError" class="notification is-danger is-hidden"></div>
                <div class="columns is-multiline">
                  
                  <!-- Nombre -->
@@ -182,5 +183,6 @@
          </div>
        </div>
     </div>
+    <script src="registrer.js"></script>
   </body>
 </html>
